@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-const port = 3030;
+const port = 3091;
 
 //crete database connection
 var connection = mysql.createConnection({
@@ -114,7 +114,7 @@ app.get('/', (req, res) => {
 // // });
 
 app.listen(port, () => {  
-    // console.log("Server Running on port no." + port);
-    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+    console.log("Server Running on port no." + port);
+    // app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 });
