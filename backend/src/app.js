@@ -114,5 +114,7 @@ app.get('/', (req, res) => {
 // // });
 
 app.listen(port, () => {  
-    console.log("Server Running on port no." + port);
+    // console.log("Server Running on port no." + port);
+    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
 });
